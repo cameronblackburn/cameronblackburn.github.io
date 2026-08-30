@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cameron Blackburn - Home</title>
+  <meta name="description" content="Portfolio of programming projects by Cameron." />
+
+  <!-- Open Graph (controls link previews when shared) -->
+  <meta property="og:title" content="Cameron Blackburn - Software Engineer Portfolio" />
+  <meta property="og:description" content="Programming portfolio: algorithms, language implementation, and full-stack projects." />
+  <meta property="og:type" content="website" />
+  <!-- TODO: og:image once you have a banner/avatar, og:url once you have a domain -->
+
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-brand" href="index.html">Cameron Blackburn</a>
+      <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links" data-nav-links>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><button class="theme-toggle" data-theme-toggle aria-pressed="false">🌙 Dark</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <section class="hero">
+        <p class="hero-eyebrow">Software Engineering Portfolio</p>
+        <h1><!-- TODO: replace with your name / headline --> Cameron</h1>
+        <p class="lede">
+          <!-- TODO: one or two sentences on who you are and what you're looking for,
+               e.g. "CS student building things across algorithms, languages, and
+               full-stack apps. Looking for software engineering roles." -->
+          Computer Science student building projects across algorithms, language
+          implementation, and full-stack development. Currently looking for
+          software engineering roles.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="portfolio.html">View my work</a>
+          <a class="btn btn-secondary" href="about.html">About me</a>
+        </div>
+      </section>
+
+      <section id="featured">
+        <div class="section-heading">
+          <h2>Featured projects</h2>
+          <a class="section-link" href="portfolio.html">See all projects →</a>
+        </div>
+
+        <div class="card-grid">
+          <!-- TODO: pick 2-3 of your strongest projects to feature here.
+               Keep these in sync with portfolio.html - copy/trim a card from there. -->
+          <div class="card">
+            <h3>Regex-to-DFA Engine</h3>
+            <p class="card-desc">
+              Compiles regular expressions into deterministic finite automata for
+              matching. <!-- TODO: expand with your actual approach/highlights -->
+            </p>
+            <ul class="tag-list">
+              <li class="tag"><!-- TODO: language --></li>
+              <li class="tag">automata theory</li>
+            </ul>
+            <div class="card-links">
+              <a href="projects/regex-dfa.html">Details</a>
+              <a href="#"><!-- TODO: repo link -->GitHub</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Toy Language Interpreter</h3>
+            <p class="card-desc">
+              An interpreter for a small custom language. <!-- TODO: describe features,
+              e.g. lexer/parser/evaluator, what the language supports -->
+            </p>
+            <ul class="tag-list">
+              <li class="tag"><!-- TODO: language --></li>
+              <li class="tag">interpreters</li>
+            </ul>
+            <div class="card-links">
+              <a href="portfolio.html">Details</a>
+              <a href="#">GitHub</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Self-Playing Snake (BFS / A* / Hamiltonian Cycle)</h3>
+            <p class="card-desc">
+              Snake with interchangeable pathfinding controllers, compared head-to-head.
+              <!-- TODO: mention any benchmark results/visuals -->
+            </p>
+            <ul class="tag-list">
+              <li class="tag"><!-- TODO: language --></li>
+              <li class="tag">pathfinding</li>
+            </ul>
+            <div class="card-links">
+              <a href="portfolio.html">Details</a>
+              <a href="#">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; <span id="year">2026</span> Cameron Blackburn. Built with HTML, CSS &amp; JS.</span>
+      <ul class="footer-links">
+        <!-- TODO: add real links (GitHub, LinkedIn, email) whenever you're ready -->
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

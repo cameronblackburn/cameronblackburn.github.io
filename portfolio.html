@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cameron Blackburn - Portfolio</title>
+  <meta name="description" content="Programming projects: algorithms, language implementation, and full-stack development." />
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-brand" href="index.html">Cameron Blackburn</a>
+      <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links" data-nav-links>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+        <li><button class="theme-toggle" data-theme-toggle aria-pressed="false">🌙 Dark</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Portfolio</h1>
+      <p class="lede" style="margin-bottom:2rem;">
+        <!-- TODO: short framing sentence if you want one -->
+        A mix of languages and problem types. Algorithms, theory, language implementation, 
+        and full-stack development.
+      </p>
+
+      <div class="placeholder-note">
+        <strong>Placeholder content.</strong> Descriptions, tags, and links below
+        are stand-ins — fill in real repo/demo links and rewrite each description
+        once the project is ready to show. Only "Regex-to-DFA Engine" links to a
+        full <a href="projects/regex-dfa.html">detail page</a> right now — copy
+        that file as a template for any other project that deserves one; the rest
+        link straight out to GitHub for now.
+      </div>
+
+      <div class="card-grid">
+
+        <div class="card">
+          <h3>Regex-to-DFA Engine</h3>
+          <p class="card-desc">
+            <!-- TODO --> Compiles regular expressions into a deterministic
+            finite automaton and uses it to match strings, built from the
+            automata theory covered in coursework rather than a regex library.
+          </p>
+          <ul class="tag-list">
+            <li class="tag"><!-- TODO: language --></li>
+            <li class="tag">automata theory</li>
+            <li class="tag">compilers</li>
+          </ul>
+          <div class="card-links">
+            <a href="projects/regex-dfa.html">Details</a>
+            <a href="#"><!-- TODO --> GitHub</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Toy Language Interpreter</h3>
+          <p class="card-desc">
+            <!-- TODO --> A lexer/parser/evaluator for a small custom
+            language, built to understand how languages actually get executed.
+          </p>
+          <ul class="tag-list">
+            <li class="tag"><!-- TODO: language --></li>
+            <li class="tag">interpreters</li>
+            <li class="tag">parsing</li>
+          </ul>
+          <div class="card-links">
+            <a href="#"><!-- TODO: repo link, or build a detail page --> GitHub</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Full-Stack App</h3>
+          <p class="card-desc">
+            <!-- TODO --> An end-to-end application covering frontend, backend,
+            and data storage.
+          </p>
+          <ul class="tag-list">
+            <li class="tag"><!-- TODO: frontend --></li>
+            <li class="tag"><!-- TODO: backend --></li>
+            <li class="tag"><!-- TODO: database --></li>
+          </ul>
+          <div class="card-links">
+            <a href="#">GitHub</a>
+            <a href="#"><!-- TODO: live demo link, if hosted --> Live demo</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Data Structure Library + Benchmarks</h3>
+          <p class="card-desc">
+            <!-- TODO --> A small library of core data structures implemented
+            from scratch, with benchmarks comparing performance characteristics.
+          </p>
+          <ul class="tag-list">
+            <li class="tag"><!-- TODO: language --></li>
+            <li class="tag">data structures</li>
+            <li class="tag">benchmarking</li>
+          </ul>
+          <div class="card-links">
+            <a href="#">GitHub</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Self-Playing Snake (BFS / A* / Hamiltonian Cycle)</h3>
+          <p class="card-desc">
+            <!-- TODO --> Snake with interchangeable pathfinding controllers —
+            BFS, A*, and a Hamiltonian-cycle strategy — compared head-to-head.
+          </p>
+          <ul class="tag-list">
+            <li class="tag"><!-- TODO: language --></li>
+            <li class="tag">pathfinding</li>
+            <li class="tag">game AI</li>
+          </ul>
+          <div class="card-links">
+            <a href="#">GitHub</a>
+            <a href="#"><!-- TODO: demo gif/video link --> Demo</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; <span id="year">2026</span> Cameron Blackburn. Built with HTML, CSS &amp; JS.</span>
+      <ul class="footer-links">
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

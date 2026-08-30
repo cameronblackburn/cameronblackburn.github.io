@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Regex-to-DFA Engine — Cameron</title>
+  <meta name="description" content="Project detail: a regex-to-DFA engine." />
+  <link rel="icon" href="../images/favicon.ico" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <!-- Note: every path on this page is one level up (../) since it lives in /projects/ -->
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-brand" href="../index.html">Cameron</a>
+      <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links" data-nav-links>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../portfolio.html" aria-current="page">Portfolio</a></li>
+        <li><button class="theme-toggle" data-theme-toggle aria-pressed="false">🌙 Dark</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <p><a href="../portfolio.html">← Back to portfolio</a></p>
+
+      <h1>Regex-to-DFA Engine</h1>
+      <div class="project-meta">
+        <span><!-- TODO: language(s) --> Language: TBD</span>
+        <span><!-- TODO: dates --> Built: 2026</span>
+        <span><a href="#"><!-- TODO: repo link --> GitHub repo</a></span>
+      </div>
+
+      <div class="placeholder-note">
+        <strong>Template page.</strong> This is the example detail page from
+        the plan — copy this file for any other project that deserves its own
+        write-up (toy language interpreter and the full-stack app are good
+        candidates), and update the nav "aria-current" and links accordingly.
+      </div>
+
+      <section>
+        <h2>Overview</h2>
+        <p>
+          <!-- TODO: 2-4 sentences: what it does, why you built it, what it
+               demonstrates. -->
+          Converts a regular expression into a nondeterministic finite
+          automaton (NFA), then determinises it into a DFA, and uses the
+          result to match input strings. Built from the automata theory
+          covered in coursework rather than relying on a regex engine.
+        </p>
+      </section>
+
+      <section>
+        <h2>How it works</h2>
+        <p>
+          <!-- TODO: brief technical walkthrough - parsing approach,
+               NFA construction method (e.g. Thompson's construction),
+               subset construction for the DFA, any minimisation step. -->
+        </p>
+      </section>
+
+      <section>
+        <h2>Notable challenges</h2>
+        <p>
+          <!-- TODO: what was hard, what you'd do differently, any
+               performance/complexity considerations. This is often the
+               most interesting part for a reviewer. -->
+        </p>
+      </section>
+
+      <section>
+        <h2>Tech stack</h2>
+        <ul class="tag-list">
+          <li class="tag"><!-- TODO --></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Screenshots / demo</h2>
+        <p class="placeholder-note">
+          <!-- TODO: add a screenshot, terminal output, or short gif once
+               available, e.g. <img src="../images/regex-dfa-demo.png" alt="..."> -->
+          No media yet.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; <span id="year">2026</span> Cameron. Built with HTML, CSS &amp; JS.</span>
+      <ul class="footer-links">
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="../js/main.js" defer></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
